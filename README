@@ -1,0 +1,13 @@
+This is libsrsircpp, version 0.0.0
+C++ wrapper for libsrsirc
+
+Quickstart:
+run ./autogen.sh to setup the autohell
+afterwards, usual ./configure ; make ; make install stuff applies
+
+See INSTALL for generic autohell compile/install instructions.
+
+(C) 2014 Emir Marincic <learath2@learath2.info>
+Contact: 
+
+See COPYING for license information
