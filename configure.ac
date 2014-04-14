@@ -17,6 +17,11 @@ AC_PROG_CXX
 AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 
+AC_CHECK_HEADER_STDBOOL
+AC_TYPE_SIZE_T
+
+AC_CHECK_LIB([srsirc], [ircbas_init], [], [AC_MSG_ERROR([libsrsirc not installed?])])
+
 AC_CONFIG_FILES([Makefile
 		 include/Makefile
 		 include/libsrsircpp/Makefile
