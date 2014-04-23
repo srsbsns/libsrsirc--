@@ -16,7 +16,7 @@ main(int argc, char **argv)
 	handle.Nick("Testircpp");
 	handle.Uname("Testircpp");
 	handle.ConFlags(0);
-	handle.Server("irc.quakenet.org", "6667");
+	handle.Server("irc.quakenet.org", 6667);
 	if(!handle.Connect(10*1000000UL)){
 		cout<<"Failed to connect"<<endl;
 		return -1;
