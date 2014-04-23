@@ -7,6 +7,8 @@
 
 #include <libsrsircpp/irc_oo.h>
 
+using namespace std;
+
 int
 main(int argc, char **argv)
 {	
@@ -14,7 +16,6 @@ main(int argc, char **argv)
 	handle.Nick("Testircpp");
 	handle.Uname("Testircpp");
 	handle.ConFlags(0);
-	handle.RegisterCallbackConRead(ConRead, 0);
 	handle.Server("irc.quakenet.org", "6667");
 	if(!handle.Connect(10*1000000UL)){
 		cout<<"Failed to connect"<<endl;
